@@ -494,6 +494,15 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
+  
+  /* HERE ARE THINGS */
+  .grid-container-row {
+    grid-row: 1 / 3;
+  }
+
+  .grid-container-column {
+    grid-column: 1 / 3;
+  }
 
   .footer-headings {
     display: flex;
