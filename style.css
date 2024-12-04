@@ -2,7 +2,7 @@
   --dark-font-color: #333333;
   --secondary-bg-color: #b3b3b3;
   --grey-font-color: #cccccc;
-  --white: #ffffff;
+  --white-color: #ffffff;
 
   --font-family-main: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
     "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -12,9 +12,9 @@
   --header-width-sm: 80px;
 
   --primary-color: #ff6600;
+  --secondary-color: #4a00ff;
   --background-color: #f4f4f4;
   --text-color: #333333;
-  --secondary-color: #4a00ff;
 
   --nav-bar-sm-height: 481px;
   --nav-bar-lg-height: 620px;
@@ -72,7 +72,7 @@ body {
 }
 
 .nav-bar-content {
-  color: var(--white);
+  color: var(--white-color);
   text-align: center;
 }
 
@@ -208,8 +208,8 @@ body {
 }
 
 /* News Items */
-.news-item {
-  background: white;
+.article-item {
+  background: var(--white-color);
   padding: 10px;
   border: 1px solid var(--grey-font-color);
   display: flex;
@@ -217,7 +217,7 @@ body {
   gap: 10px;
 }
 
-.news-item img {
+.article-item img {
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -342,7 +342,7 @@ body {
 
 .footer {
   background: var(--secondary-bg-color);
-  color: var(--white);
+  color: var(--white-color);
   padding: 20px;
   text-align: center;
 }
@@ -376,12 +376,12 @@ body {
 .footer-section h4 {
   font-size: 1.2rem;
   margin-bottom: 10px;
-  color: var(--white);
+  color: var(--white-color);
 }
 
 .footer-section a {
   text-decoration: none;
-  color: var(--white);
+  color: var(--white-color);
 }
 
 .footer-bottom {
@@ -404,7 +404,7 @@ body {
 
 .social-links a {
   font-size: 1.5rem;
-  color: var(--white);
+  color: var(--white-color);
 }
 
 .legal {
@@ -412,7 +412,7 @@ body {
 }
 
 .legal a {
-  color: var(--white);
+  color: var(--white-color);
   text-decoration: none;
 }
 
@@ -444,11 +444,11 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .news-item.large {
+  .article-item.large {
     grid-column: span 2;
   }
 
-  .news-item.medium {
+  .article-item.medium {
     grid-column: span 1;
   }
 
