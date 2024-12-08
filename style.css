@@ -1,23 +1,34 @@
 :root {
-  --dark-font-color: #333333;
-  --secondary-bg-color: #b3b3b3;
-  --grey-font-color: #cccccc;
-  --white: #ffffff;
-
   --font-family-main: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
     "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
+
+  --dark-font-color: #333333;
+  --grey-font-color: #cccccc;
+  --white: #ffffff;
 
   --primary-bg-color: #f0ecec;
   --header-width-sm: 80px;
 
   --primary-color: #ff6600;
   --background-color: #f4f4f4;
+  --secondary-bg-color: #b3b3b3;
+
   --text-color: #333333;
   --secondary-color: #4a00ff;
 
+  --primary-shadow-color: #00000080;
+  --light-border-color: #ddd;
+
   --nav-bar-sm-height: 481px;
   --nav-bar-lg-height: 620px;
+
+  --facebook-bg: #4267b2;
+  --youtube-bg: #ff0000;
+  --twitter-bg: #1da1f2;
+  --instagram-bg: #e1306c;
+
+  --card-button: #3f51b5;
 }
 
 body,
@@ -93,7 +104,6 @@ body {
 .nav-bar-bottom {
   display: flex;
   justify-content: center;
-  /* margin-bottom: 100px; */
 }
 
 .main-btn {
@@ -101,18 +111,18 @@ body {
   width: 200px;
   height: 50px;
   background: inherit;
-  background-color: rgba(54, 50, 255, 1);
+  background-color: var(--secondary-color);
   border-radius: 31px;
   font-weight: 700;
   font-style: normal;
   font-size: 20px;
-  color: white;
+  color: var(--white);
   cursor: pointer;
 }
 
 .aside-btn {
   background-color: var(--secondary-color);
-  color: #fff;
+  color: var(--white);
   padding: 12px;
   border-radius: 4px;
   text-decoration: none;
@@ -123,7 +133,7 @@ body {
 }
 
 .categories {
-  background-color: white;
+  background-color: var(--white);
   padding: 20px;
   max-width: 600px;
 }
@@ -154,9 +164,9 @@ body {
 
 .popular-posts {
   max-width: 650px;
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 5px 10px 0px var(--primary-shadow-color);
   overflow: hidden;
-  background: white;
+  background: var(--white);
   margin-bottom: 30px;
 }
 
@@ -164,7 +174,7 @@ body {
   text-align: center;
   padding: 10px;
   font-size: 18px;
-  background: #f5f5f5;
+  background: var(--background-color);
   margin: 0;
 }
 
@@ -180,7 +190,7 @@ body {
 .post-info {
   position: absolute;
   bottom: 0;
-  color: white;
+  color: var(--white);
   width: 100%;
   padding: 5px;
   font-size: 40px;
@@ -198,7 +208,7 @@ body {
 }
 
 .post-buttons button {
-  background: white;
+  background: var(--white);
   border: none;
   border-radius: 50%;
   width: 20px;
@@ -209,18 +219,17 @@ body {
 
 .blog-container {
   max-width: 650px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--light-border-color);
   border-radius: 5px;
-  background: white;
+  background: var(--white);
   overflow: hidden;
-  
 }
 
 .blog-header {
   text-align: center;
   padding: 10px;
   font-size: 18px;
-  background: #f5f5f5;
+  background: var(--background-color);
   margin: 0;
   font-weight: bold;
 }
@@ -228,8 +237,7 @@ body {
 .blog-post {
   display: flex;
   padding: 10px;
-  border-bottom: 1px solid #ddd;
-  
+  border-bottom: 1px solid var(--light-border-color);
 }
 
 .blog-post:last-child {
@@ -257,10 +265,10 @@ body {
 
 .card {
   max-width: 300px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--light-border-color);
   text-align: center;
   padding: 15px;
-  background: white;
+  background: var(--white);
 }
 
 .card-title {
@@ -271,14 +279,14 @@ body {
 
 .card-description {
   font-size: 14px;
-  color: #555;
+  color: var(--dark-font-color);
   margin-bottom: 15px;
 }
 
 .card-button {
   display: inline-block;
-  background-color: #3f51b5;
-  color: white;
+  background-color: var(--card-button);
+  color: var(--white);
   padding: 8px 16px;
   text-decoration: none;
   font-size: 14px;
@@ -291,7 +299,7 @@ body {
 }
 
 .scroll-bottom p {
-  color: rgb(255, 255, 255);
+  color: var(--white);
   font-weight: 700;
   font-style: normal;
   font-size: 20px;
@@ -353,7 +361,7 @@ body {
 }
 
 .navigation-links li:hover {
-  background-color: rgba(54, 50, 255, 1);
+  background-color: var(--secondary-color);
 }
 
 .navigation-links li a {
@@ -369,7 +377,7 @@ body {
 .search-bar button {
   padding: 5px 10px;
   background: var(--primary-color);
-  color: white;
+  color: var(--white);
   border: none;
   cursor: pointer;
 }
@@ -387,7 +395,7 @@ body {
 
 /* News Items */
 .news-item {
-  background: white;
+  background: var(--white);
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -395,7 +403,7 @@ body {
 }
 
 article {
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 5px 10px 0px var(--primary-shadow-color);
   cursor: pointer;
 }
 
@@ -403,7 +411,6 @@ article {
   display: flex;
   justify-content: center;
   font-size: 30px;
-
 }
 
 .news-item img {
@@ -438,7 +445,7 @@ article {
 }
 
 .card {
-  background-color: #e0f7ff;
+  background-color: var(--background-color);
   border-radius: 8px;
   text-align: center;
   overflow: hidden;
@@ -460,7 +467,7 @@ article {
 
 .card-button {
   background-color: var(--secondary-color);
-  color: #fff;
+  color: var(--white);
   padding: 12px;
   border-radius: 4px;
   text-decoration: none;
@@ -479,7 +486,7 @@ article {
 .social-container h2 {
   padding: 10px;
   margin-bottom: 16px;
-  background-color: #e0f7ff;
+  background-color: var(--background-color);
 }
 
 .social-button {
@@ -489,30 +496,33 @@ article {
   border-radius: 25px;
   text-decoration: none;
   font-weight: bold;
-  color: #fff;
+  color: var(--white);
   text-align: center;
   width: 70%;
   max-width: 150px;
 }
 
 .facebook {
-  background-color: #4267b2;
+  background-color: var(--facebook-bg);
 }
+
 .youtube {
-  background-color: #ff0000;
+  background-color: var(--youtube-bg);
 }
+
 .twitter {
-  background-color: #1da1f2;
+  background-color: var(--twitter-bg);
 }
+
 .instagram {
-  background-color: #e1306c;
+  background-color: var(--instagram-bg);
 }
 
 .subscribe-container {
   max-width: 320px;
   text-align: center;
   padding: 16px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--light-border-color);
   border-radius: 8px;
   margin: 0 auto;
 }
@@ -539,7 +549,7 @@ article {
   display: block;
   padding: 10px;
   background-color: blue;
-  color: white;
+  color: var(--white);
   border-radius: 4px;
   text-decoration: none;
 }
@@ -599,7 +609,6 @@ article {
   font-size: 0.9rem;
 }
 
-
 .social-links {
   margin: 10px 0;
   display: flex;
@@ -635,7 +644,7 @@ article {
   text-align: center;
 }
 
-.aside{
+.aside {
   display: none;
 }
 
@@ -643,7 +652,7 @@ article {
   margin-bottom: 30px;
 }
 
-.main-aside-section{
+.main-aside-section {
   display: flex;
 }
 
@@ -706,7 +715,7 @@ article {
 
 /* Grid Container for Large Screens */
 @media screen and (min-width: 900px) {
-  .aside{
+  .aside {
     display: block;
     margin-top: 20px;
   }
