@@ -428,6 +428,12 @@ body {
   height: 30px;
 }
 
+.search-bar-hamburger {
+  display: flex;
+  justify-content: right;
+  margin: 10px 0;
+}
+
 /* Content Section */
 .content {
   padding: 20px;
